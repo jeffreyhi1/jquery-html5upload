@@ -26,12 +26,12 @@ $('#my_form').html5upload({
     alert('The file transfer was aborted!');
   },
   onError: function(event) {
-    alert('An error occred while during the file transfer!');
+    alert('An error occurred while during the file transfer!');
   },
   onProgress: function(event) {
-    if (event.) {
-      var progress = 0;
-      $('#progress').html(progress + '%');
+    if (event.lengthComputable) {
+      var percentage = Math.round(event.loaded / event.total * 100);
+      $('#progress').html(percentage + '%');
     }
   },
   onLoad: function(event, xhr) {
