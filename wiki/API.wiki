@@ -18,9 +18,9 @@ Uploads the form via AJAX. The most common use case of this method on the submis
 
   * `onProgress`: `onProgress` is a `callback` function that is called multiple times during the progress of the upload. The `callback` is passed the `event object` in its first parameter from the underlying `XMLHttpRequest.upload.onprogress` event in its first parameter.
 
-  * `url`: `url` is the URL to upload to. If `url` is empty or not specified, then the URL of the current page will be used.
-
   * `sendFormData`: If `true`, all of the form's data fields will be sent along with the file upload; otherwise, the form's data fields will be ignored. This option is ignored if this method was called on a file input.
+
+  * `url`: `url` is the URL to upload to. If `url` is empty or not specified, then the URL of the current page will be used.
 
 
 == Examples ==
@@ -29,7 +29,7 @@ Using html5upload on a form:
 {{{
 $('#my_form').html5upload({
   url: '/upload-with-response.php',
-  useFormData: true,
+  sendFormData: true,
   onAbort: function(event) {
     alert('The file transfer was aborted!');
   },
