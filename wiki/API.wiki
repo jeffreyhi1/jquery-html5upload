@@ -6,12 +6,12 @@ Uploads the form via AJAX. The most common use case of this method on the submis
 
 == Parameters ==
 
-=== options ===
-<code>options</code> is an object containing 1 or more of the following fields:
-*<code>data</code>
-*<code>onAbort</code>
-*<code>onError</code>
-*<code>onLoad</code>
-*<code>onProgress</code>
-*<code>url</code>
-*<code>useFormData</code>
+=== _object_ options ===
+`options` is an object containing 1 or more of the following fields:
+*`data`
+*`onAbort`
+*`onError`
+*`onLoad`
+*`onProgress`
+*`url`
+*`useFormData`
