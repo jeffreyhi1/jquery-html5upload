@@ -14,4 +14,4 @@ Uploads the form via AJAX. The most common use case of this method on the submis
   * `onLoad`: `onLoad` is a `callback` function that is called when the files are done being uploaded. The `callback` is passed the `event object` in its first parameter, and the original `XMLHttpRequest object` in its second parameter.
   * `onProgress`: `onProgress` is a `callback` function  that is called multiple times during the progress of the upload. The `callback` is passed the `event object` in its first parameter.
   * `url`: `url` is the URL to upload to. If `url` is empty or not specified, then the request sent to the current page's URL.
-  * `useFormData`: If `true`, all of the form's data fields will be sent with the file upload; otherwise, the form's data fields will be ignored.
+  * `useFormData`: If `true`, all of the form's data fields will be sent along with the file upload; otherwise, the form's data fields will be ignored.
