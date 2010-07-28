@@ -23,10 +23,10 @@ Using html5upload on a form.
 {{{
 $('#my_form').html5upload({
   onAbort: function(event) {
-    alert('Abort!');
+    alert('The file transfer was aborted!');
   },
   onError: function(event) {
-    alert('Error!');
+    alert('An error occred while during the file transfer!');
   },
   onProgress: function(event) {
     if (event.) {
@@ -35,7 +35,7 @@ $('#my_form').html5upload({
     }
   },
   onLoad: function(event, xhr) {
-    alert('The files were successfully uploaded! The script returned the response: ' + xhr.responseText);
+    alert('The file transfer is complete! The transfer resulted in the response: ' + xhr.responseText);
   },
   useFormData: true
 });
