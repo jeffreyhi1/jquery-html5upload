@@ -2,7 +2,7 @@
 
 = html5upload =
 
-The `html5upload` method uploads the form through AJAX using the XMLHttpRequest and File APIs from HTML5. This effectively removes the need of using iframe and flash hacks to upload files via AJAX. The most common use case of this method on the submission of a form that uploads 1 or more files. This method can also be used on an individual file input so that a file can be uploaded without having the submit the whole form.
+The `html5upload` method uploads the form through AJAX using the XMLHttpRequest and File APIs from HTML5. This effectively removes the need of using iframe and flash hacks to upload files via AJAX. The most common use case of this method is for the submission of a form that uploads 1 or more files. This method can also be used on an individual file input so that a file can be uploaded without having to the submit the whole form.
 
 == Parameters ==
 
@@ -50,7 +50,7 @@ $('#my_form').html5upload({
 
 Using html5upload on a file input:
 {{{
-$('my_file_input').html5upload({
+$('#my_file_input').html5upload({
   url: '/upload.php',
   onLoad: function(event, xhr) {
     alert('The file transfer is complete!');
