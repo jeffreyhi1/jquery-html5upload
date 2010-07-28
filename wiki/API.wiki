@@ -1,0 +1,5 @@
+#summary The jQuery html5upload Plugin API provides a simple method that allows you to easily upload files.
+
+= html5upload =
+
+Uploads the form via AJAX. The most common use case of this method on the submission of a form that uploads 1 or more files.
