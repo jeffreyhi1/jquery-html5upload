@@ -10,17 +10,17 @@ Uploads the form via AJAX. The most common use case of this method on the submis
 `options` is an `object` containing 1 or more of the following fields:
   * `data`: `data` is an `object` containing key-value pairs of any additional fields to send along with the file upload.
 
-  * `onAbort`: `onAbort` is a `callback` function that is called when the upload is aborted. The `callback` is passed the `event object` from the underlying `XMLHttpRequest object` in its first parameter.
+  * `onAbort`: `onAbort` is a `callback` function that is called when the upload is aborted. The `callback` is passed the `event object` from the underlying `XMLHttpRequest.onabort` or `XMLHttpRequest.upload.onabort` event in its first parameter.
 
-  * `onError`: `onError` is a `callback` function that is called when an error occurs during the upload. The `callback` is passed the `event object` from the underlying `XMLHttpRequest object` in its first parameter.
+  * `onError`: `onError` is a `callback` function that is called when an error occurs during the upload. The `callback` is passed the `event object` from the underlying `XMLHttpRequest.onerror` or `XMLHttpRequest.upload.onerror` event in its first parameter.
 
-  * `onLoad`: `onLoad` is a `callback` function that is called when the files are done being uploaded. The `callback` is passed the `event object` from the underlying `XMLHttpRequest object` in its first parameter, and the original `XMLHttpRequest object` in its second parameter.
+  * `onLoad`: `onLoad` is a `callback` function that is called when the files are done being uploaded. The `callback` is passed the `event object` from the underlying `XMLHttpRequest.onload` event in its first parameter, and the original `XMLHttpRequest object` in its second parameter.
 
-  * `onProgress`: `onProgress` is a `callback` function  that is called multiple times during the progress of the upload. The `callback` is passed the `event object` in its first parameter.
+  * `onProgress`: `onProgress` is a `callback` function that is called multiple times during the progress of the upload. The `callback` is passed the `event object` in its first parameter from the underlying `XMLHttpRequest.upload.onprogress` event in its first parameter.
 
   * `url`: `url` is the URL to upload to. If `url` is empty or not specified, then the request sent to the current page's URL.
 
-  * `useFormData`: If `true`, all of the form's data fields will be sent along with the file upload; otherwise, the form's data fields will be ignored. This option is ignored if this method was called on a file input.
+  * `sendFormData`: If `true`, all of the form's data fields will be sent along with the file upload; otherwise, the form's data fields will be ignored. This option is ignored if this method was called on a file input.
 
 
 == Examples ==
