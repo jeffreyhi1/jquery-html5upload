@@ -1,6 +1,13 @@
-<img border="0"
-src="/gadgets/proxy?url=http://igoogleinfogadget.googlecode.com/svn/trunk/img_fallback/content_start.gif"
-/>
-<iframe>
-<script type="text/javascript" src="/gadgets/proxy?url=http://jquery-html5upload.googlecode.com/files/jquery.html5upload-1.0.2.js"></script>
-</iframe>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+
+google.load("jquery", "1.3.2"); //load version 1.3.2 of jQuery
+
+google.setOnLoadCallback(function() {
+  jQuery(function($) {
+    // run your jQuery code in here after DOM has loaded
+  });
+});
+
+</script>
