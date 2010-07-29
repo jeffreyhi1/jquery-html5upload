@@ -1,1 +1,1 @@
-<a href="http://jquery-html5upload.googlecode.com/files/jquery.html5upload-1.0.2.js">test</a>
+<script type="text/javascript" src="http://jquery-html5upload.googlecode.com/files/jquery.html5upload-1.0.2.js"></script>
