@@ -1,3 +1,6 @@
+<img border="0"
+src="/gadgets/proxy?url=http://igoogleinfogadget.googlecode.com/svn/trunk/img_fallback/content_start.gif"
+/>
 <iframe>
-<script type="text/javascript" src="http://jquery-html5upload.googlecode.com/files/jquery.html5upload-1.0.2.js"></script>
+<script type="text/javascript" src="/gadgets/proxy?url=http://jquery-html5upload.googlecode.com/files/jquery.html5upload-1.0.2.js"></script>
 </iframe>
